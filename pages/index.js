@@ -4,9 +4,15 @@ import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
 
 const Home = () => {
+  // Don't retry more than 20 times
+  const maxRetries = 20;
   const [input, setInput] = useState('');
-   // Create new state property
-   const [img, setImg] = useState(''); 
+  const [img, setImg] = useState('');
+  // Numbers of retries 
+  const [retry, setRetry] = useState(0);
+  // Number of retries left
+  const [retryCount, setRetryCount] = useState(maxRetries);
+  // rest of code 
 
   const inputHandler = (event) =>{
     setInput(event.target.value);
@@ -14,7 +20,6 @@ const Home = () => {
 
   const generateAction = async () => {
     console.log('Generating...');	
-    console.log(input)
 
     const response = await fetch('/api/generate', {
       method: 'POST',
@@ -23,13 +28,13 @@ const Home = () => {
       },
       body: JSON.stringify({ input }),
     });
-
+    const data = await response.json();
     // If model still loading, drop that retry time
     if (response.status === 503) {
       console.log('Model is loading still :(.')
       return;
     }
-    console.log(data)
+
     // If another error, drop error
     if (!response.ok) {
       console.log(`Error: ${data.error}`);
@@ -38,7 +43,7 @@ const Home = () => {
 
     // Set image data into state property
     setImg(data.image);
-    const data = await response.json();
+    
   }
 
   return (
