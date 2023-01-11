@@ -55,7 +55,7 @@ const Home = () => {
     }
     
     console.log('Generating...');	
-    const finalInput = input.replace(/alan/gi, 'pelayoaz');
+    const finalInput = input.replace(/alan/gi, 'alan');
     const response = await fetch('/api/generate', {
       method: 'POST',
       headers: {
@@ -141,7 +141,7 @@ const Home = () => {
               <h1>Turn apcodes into anyone you want! 😄</h1>
             </div>
             <div className="header-subtitle">
-              <h2>Make sure you refer to me as "pelayoaz" in the prompt"</h2>
+              <h2>Make sure you refer to me as "alan" in the prompt"</h2>
             </div>
             <div className="prompt-container">
               <input className="prompt-box" value={input} onChange={inputHandler}/>
@@ -186,17 +186,17 @@ const Home = () => {
       <div className='examples' id='examples'>
         <h2 className='newh2'>Examples..</h2>
         <div className='example'>
-          <p>Portrait of pelayoaz as Superman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgem and gem</p>
+          <p>Portrait of alan as Superman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgem and gem</p>
           <Image src={example1} width={450} height={450} alt="Example 1" />  
         </div>
 
         <div className='example'>
           <Image src={example2} width={450} height={450} alt="Example 3" />
-          <p>Portrait of pelayoaz as a Peaky Blinder, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Vincent Van Gogh and Edvard Munch and Pablo Picasso</p> 
+          <p>Portrait of alan as a Peaky Blinder, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Vincent Van Gogh and Edvard Munch and Pablo Picasso</p> 
         </div>
 
         <div className='example'>
-          <p>Portrait of pelayoaz as an astronout</p>
+          <p>Portrait of alan as an astronout</p>
           <Image src={example3} width={450} height={450} alt="Example 3" />  
         </div>
         
