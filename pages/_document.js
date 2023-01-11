@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html style={{scrollBehavior:'smooth'}}>
       <Head>
         <meta property="og:title" content="AI Avatar Generator" key="title" />
         <meta
