@@ -334,7 +334,7 @@ body {
 @media (max-width: 1000px) {
     .main{
         
-        background-image: url('../public/darkimg.png');
+        background-image: url('/images/darkimg.png');
         background-size: cover;
     }
     .container {
