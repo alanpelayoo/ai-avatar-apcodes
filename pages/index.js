@@ -208,6 +208,12 @@ const Home = () => {
               className='iconf'
           />
         </a>
+
+        <a className='mt' href='https://twitter.com/_buildspace'>
+          <p>Powered by buildspace</p>
+          <Image src={buildspaceLogo} width={50} height={50} alt={input}/>
+        </a>
+
       </div>
       
       <div className="badge-container grow">
@@ -222,6 +228,7 @@ const Home = () => {
           </div>
         </a>
       </div>
+      
     </div>
   );
 };

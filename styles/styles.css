@@ -331,6 +331,14 @@ body {
     
 }
 
+.mt{
+    
+    color: #F32E98;
+    font-style: oblique;
+}
+.mt p{
+    margin-top: 100px;
+}
 
 @media (max-width: 1000px) {
     .main{
