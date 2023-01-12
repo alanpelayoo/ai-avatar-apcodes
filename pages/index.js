@@ -16,7 +16,7 @@ import {
 const Home = () => {
   // Don't retry more than 20 times
   const maxRetries = 20;
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState('Portrait of alan as a Jack Sparrow, uhd, 4k, highly detailled.');
   const [img, setImg] = useState('');
   // Numbers of retries 
   const [retry, setRetry] = useState(0);
