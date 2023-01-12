@@ -132,6 +132,7 @@ const Home = () => {
     <div className="root" >
       <Head>
         <title>AI Avatar Generator | apcodes</title>
+        <meta property="og:image" content='https://github.com/alanpelayoo/ai-avatar-apcodes/blob/starter/public/images/bg1.png' />
       </Head>
 
       <div className="main" id='main'>
