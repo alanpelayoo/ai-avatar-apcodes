@@ -55,7 +55,7 @@ const Home = () => {
     }
     
     console.log('Generating...');	
-    const finalInput = input.replace(/alan/gi, 'alan');
+    const finalInput = input.replace(/alan/gi, 'pelayoaz');
     const response = await fetch('/api/generate', {
       method: 'POST',
       headers: {
