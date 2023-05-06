@@ -1,1 +1,1 @@
-hey
+In this project, I was able to develop a website that generates an AI avatar of myself using Stable Diffusion. First of all, a set of images of my face were trained using SD and Dreambooth to tune the text-to-image model, then the model was uploaded to Hugginface, so we can host our model and call the interference API in the backend. The WebApp was then created using Next. in order to style our frontend and make the necessary API request to our hosted SD model, generated images. 
